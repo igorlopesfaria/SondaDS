@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SondaSD</string>
+
+    <string name="error_alert_from_top">Alerta de Erro do Top</string>
+    <string name="error_alert_from_bottom">Alerta de Erro do Bottom</string>
+    <string name="info_alert_from_top">Alerta de Info do Top</string>
+    <string name="info_alert_from_bottom">Alerta de Info do Bottom</string>
+    <string name="success_alert_from_top">Alerta de Success do Top</string>
+    <string name="success_alert_from_bottom">Alerta de Success do Bottom</string>
+    <string name="warning_alert_from_top">Alerta de Warning do Top</string>
+    <string name="warning_alert_from_bottom">Alerta de Warning do Bottom</string>
+    <string name="loading_alert_from_top">Alerta de Loading do Top</string>
+    <string name="loading_alert_from_bottom">Alerta de Loading do Bottom</string>
+
+    <string name="primary_button">Primary Button</string>
+    <string name="primary_icon_button">Primary Icon Button</string>
+    <string name="blocked_button">Blocked Button</string>
+    <string name="blocked_icon_button">Blocked Icon Button</string>
+    <string name="secondary_button">Secondary Button</string>
+    <string name="secondary_icon_button">Secondary Icon Button</string>
+    <string name="primary_loading_button">Primary Loading Button</string>
+    <string name="secondary_loading_button">Secondary Loading Button</string>
+
+    <string name="title_cell_item">Title</string>
+    <string name="subtitle_cell_item">subTitle</string>
+</resources>

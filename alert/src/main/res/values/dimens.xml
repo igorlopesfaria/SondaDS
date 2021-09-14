@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sonda_alert_loading_height">72dp</dimen>
+    <dimen name="sonda_alert_height">48dp</dimen>
+    <dimen name="sonda_alert_progressbar_height">40dp</dimen>
+    <dimen name="sonda_alert_icon_size">24dp</dimen>
+    <dimen name="sonda_alert_close_size">48dp</dimen>
+    <dimen name="sonda_alert_close_icon_size">16dp</dimen>
+    <dimen name="sonda_border_radius_progressbar" >500dp</dimen>
+
+</resources>

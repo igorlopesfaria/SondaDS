@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?sondaAlertBackground"
+    android:minHeight="@dimen/sonda_alert_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:theme="?sondaAlertTheme"
+    android:layout_margin="@dimen/sonda_margin_xxxs">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/alert_icon"
+        android:layout_width="@dimen/sonda_alert_icon_size"
+        android:layout_height="@dimen/sonda_alert_icon_size"
+        app:srcCompat="?sondaAlertIcon"
+        app:tint="?sondaAlertIconColor"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:layout_marginEnd="@dimen/sonda_margin_xs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/alert_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:layout_marginEnd="@dimen/sonda_margin_xs"
+        android:gravity="center_vertical"
+        android:importantForAccessibility="yes"
+        android:paddingTop="@dimen/sonda_margin_xxxs"
+        android:paddingBottom="@dimen/sonda_margin_xxxs"
+        android:textColor="?sondaAlertTextColor"
+        android:textSize="@dimen/sonda_font_size_xxxs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/alert_close_icon"
+        app:layout_constraintStart_toEndOf="@+id/alert_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Alert gk kgk g kgggkghvkgvkgvggvgv    kvhb ghvkhgvkgghvkhgvkgghvkhgvkgghvkhgvkgghvkhgvkgghvkhgvkgghvkhgvkgghvkhgvkg   " />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/alert_close_icon"
+        android:layout_width="@dimen/sonda_alert_close_icon_size"
+        android:layout_height="@dimen/sonda_alert_close_icon_size"
+        app:srcCompat="?sondaAlertIconClose"
+        app:tint="?sondaAlertIconCloseColor"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="@dimen/sonda_margin_xs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

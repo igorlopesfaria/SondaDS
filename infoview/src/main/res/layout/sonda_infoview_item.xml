@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/sonda_infoview_background"
+    android:paddingTop="@dimen/sonda_margin_xxs"
+    android:paddingBottom="@dimen/sonda_margin_xxs">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/sonda_icon_default"
+        android:layout_height="@dimen/sonda_icon_default"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:layout_marginLeft="@dimen/sonda_margin_xs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_like" />
+
+    <br.com.sondasd.typography.SondaTextView
+        android:id="@+id/tvTitle"
+        style="@style/Sonda.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sonda_margin_xxs"
+        android:layout_marginEnd="@dimen/sonda_margin_xxs"
+        android:includeFontPadding="false"
+        android:theme="?attr/sondaInfoViewTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivIcon"
+        app:layout_constraintTop_toTopOf="@id/ivIcon"
+        app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+
+        tools:text="Importante" />
+
+    <br.com.sondasd.typography.SondaTextView
+        android:id="@+id/tvMessage"
+        style="@style/Sonda.Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:layout_marginEnd="@dimen/sonda_margin_xs"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        tools:text="Devido ao tempo de processamento de boletos, podemos levar até 3 dias úteis para reconhecer o pagamento e liberar o limite do seu cartão."
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

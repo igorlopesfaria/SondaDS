@@ -1,0 +1,21 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "SondaSD"
+include ':app'
+include ':buttons'
+include ':edittext'
+include ':toolbar'
+include ':infoview'
+include ':cell'
+include ':bottomnavigation'
+include ':toggles'
+include ':tagfilter'
+include ':typography'
+include ':alert'
+include ':core'

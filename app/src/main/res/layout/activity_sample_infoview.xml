@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <br.com.sondasd.infoview.SondaInfoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:infoIcon="@drawable/ic_info"
+        android:layout_margin="@dimen/sonda_margin_xs"
+        app:infoIconTint="@color/sonda_color_info"
+        app:infoTitle="Title"
+        app:infoMessage="Mensagem de descrição de uma InfoView bem graaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaande"/>
+</LinearLayout>

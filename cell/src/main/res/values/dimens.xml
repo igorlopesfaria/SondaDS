@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sonda_cell_line_width">5dp</dimen>
+
+    <dimen name="sonda_cell_height">56dp</dimen>
+    <dimen name="sonda_cell_icon_size">24dp</dimen>
+    <dimen name="sonda_skeleton_short_text">80dp</dimen>
+    <dimen name="sonda_skeleton_medium_text">130dp</dimen>
+    <dimen name="sonda_skeleton_long_text">200dp</dimen>
+
+</resources>

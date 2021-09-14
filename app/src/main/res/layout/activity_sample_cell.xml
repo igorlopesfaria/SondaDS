@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/sonda_neutral_light">
+
+    <br.com.sondasd.cell.SondaCellItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/title_cell_item"
+        />
+
+    <br.com.sondasd.cell.SondaCellItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/title_cell_item"
+        app:subtitle="@string/subtitle_cell_item"
+        app:iconSrc="@drawable/ic_like"
+        app:iconTint="@color/sonda_color_primary"
+        app:sondaCellLineColor="@color/sonda_color_secondary"
+        />
+
+    <br.com.sondasd.cell.SondaCellItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/title_cell_item"
+        app:subtitle="@string/subtitle_cell_item"
+        />
+    <br.com.sondasd.cell.SondaCellItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:subtitle="@string/subtitle_cell_item"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cells_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/sonda_cell_item_view" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cells_list_skeleton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/sonda_cell_item_skeleton" />
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

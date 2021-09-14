@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sondaHeadingTextColor" format="reference"/>
+    <attr name="sondaTitleTextColor" format="reference"/>
+    <attr name="sondaSubtitleTextColor" format="reference"/>
+    <attr name="sondaParagraphTextColor" format="reference"/>
+    <attr name="sondaDescriptionTextColor" format="reference"/>
+    <attr name="sondaCaptionTextColor" format="reference"/>
+    <attr name="sondaLinkTextColor" format="color" />
+    <attr name="sondaLinkIconColor" format="color" />
+
+    <attr name="sondaTypographyTheme" format="reference"/>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Sonda.Cell"
+    android:layout_margin="@dimen/sonda_margin_xxxs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sonda_cell_container"
+        android:layout_width="match_parent"
+        android:background="?sondaCellBackground"
+        android:layout_height="wrap_content">
+
+        <View
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <View
+            android:id="@+id/sonda_cell_line"
+            android:layout_width="@dimen/sonda_cell_line_width"
+            android:layout_height="0dp"
+            android:background="?sondaCellLineColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sonda_cell_icon"
+            android:layout_width="@dimen/sonda_icon_default"
+            android:layout_height="@dimen/sonda_icon_default"
+            android:layout_marginStart="@dimen/sonda_margin_xs"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sonda_cell_line"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sonda_margin_xs"
+            android:layout_marginTop="@dimen/sonda_margin_xs"
+            android:layout_marginBottom="@dimen/sonda_margin_xs"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sonda_cell_icon"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <br.com.sondasd.typography.SondaTextView
+                android:id="@+id/sonda_cell_item_title"
+                style="@style/Sonda.Head.Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Title"
+                tools:visibility="visible" />
+
+            <br.com.sondasd.typography.SondaTextView
+                android:id="@+id/sonda_cell_item_subtitle"
+                style="@style/Sonda.Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="?sondaCellSubtitleColor"
+                android:visibility="gone"
+                tools:text="Subtitle"
+                tools:visibility="visible" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

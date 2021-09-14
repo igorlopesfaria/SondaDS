@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sonda_neutral_light1">#f0f0f0</color>
+    <color name="sonda_neutral_light2">#cccccc</color>
+    <color name="sonda_neutral_light3">#b8b8b8</color>
+    <color name="sonda_neutral_light">#ffffff</color>
+    <color name="sonda_neutral_dark1">#666666</color>
+    <color name="sonda_neutral_dark2">#3D3D3D</color>
+    <color name="sonda_neutral_dark3">#1F1F1F</color>
+    <color name="sonda_neutral_dark">#121212</color>
+
+    <color name="sonda_color_error">#CC3333</color>
+    <color name="sonda_color_info">#505AFF</color>
+    <color name="sonda_color_success">#0A9E5A</color>
+    <color name="sonda_color_warning">#D77B0A</color>
+
+    <color name="sonda_color_primary">#207EB0</color>
+    <color name="sonda_color_primary_dark">#00679b</color>
+    <color name="sonda_color_primary_light">#5595b5</color>
+
+    <color name="sonda_color_secondary">#46cd90</color>
+    <color name="sonda_color_secondary_dark">#00bf69</color>
+    <color name="sonda_color_secondary_light">#82dbab</color>
+
+</resources>

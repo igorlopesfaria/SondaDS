@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sonda.AlertTheme">
+        <item name="sondaAlertBackgroundError">@drawable/sonda_alert_error_background</item>
+        <item name="sondaAlertBackgroundInfo">@drawable/sonda_alert_info_background</item>
+        <item name="sondaAlertBackgroundSuccess">@drawable/sonda_alert_success_background</item>
+        <item name="sondaAlertBackgroundWarning">@drawable/sonda_alert_warning_background</item>
+
+        <item name="sondaAlertIconError">@drawable/ic_error</item>
+        <item name="sondaAlertIconInfo">@drawable/ic_info</item>
+        <item name="sondaAlertIconSuccess">@drawable/ic_done</item>
+        <item name="sondaAlertIconWarning">@drawable/ic_warning</item>
+
+        <item name="sondaAlertIconClose">@drawable/ic_close</item>
+        <item name="sondaAlertIconCloseColor">@color/sonda_neutral_light</item>
+
+    </style>
+    <style name="Sonda.AlertThemeError">
+        <item name="sondaAlertIcon">?sondaAlertIconError</item>
+        <item name="sondaAlertBackground">?sondaAlertBackgroundError</item>
+        <item name="sondaAlertTextColor">@color/sonda_neutral_light</item>
+        <item name="sondaAlertIconColor">@color/sonda_neutral_light</item>
+    </style>
+    <style name="Sonda.AlertThemeInfo">
+        <item name="sondaAlertIcon">?sondaAlertIconInfo</item>
+        <item name="sondaAlertBackground">?sondaAlertBackgroundInfo</item>
+        <item name="sondaAlertTextColor">@color/sonda_neutral_light</item>
+        <item name="sondaAlertIconColor">@color/sonda_neutral_light</item>
+    </style>
+    <style name="Sonda.AlertThemeSuccess">
+        <item name="sondaAlertIcon">?sondaAlertIconSuccess</item>
+        <item name="sondaAlertBackground">?sondaAlertBackgroundSuccess</item>
+        <item name="sondaAlertTextColor">@color/sonda_neutral_light</item>
+        <item name="sondaAlertIconColor">@color/sonda_neutral_light</item>
+    </style>
+    <style name="Sonda.AlertThemeWarning">
+        <item name="sondaAlertIcon">?sondaAlertIconWarning</item>
+        <item name="sondaAlertBackground">?sondaAlertBackgroundWarning</item>
+        <item name="sondaAlertTextColor">@color/sonda_neutral_light</item>
+        <item name="sondaAlertIconColor">@color/sonda_neutral_light</item>
+    </style>
+
+    <style name="Sonda.AlertThemeLoading">
+        <item name="sondaAlertIcon">@drawable/ic_timer</item>
+        <item name="sondaAlertIconColor">@color/sonda_neutral_dark</item>
+        <item name="sondaAlertTextColor">@color/sonda_neutral_dark</item>
+        <item name="sondaAlertBackgroundLoading">@drawable/sonda_alert_background</item>
+
+        <item name="sondaAlertLoadingColor">@color/sonda_color_primary</item>
+        <item name="sondaAlertLoadingBackgroundColor">@color/sonda_neutral_light3</item>
+    </style>
+
+    <style name="SondaOverlayAlert" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:padding">@dimen/sonda_margin_xxxs</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

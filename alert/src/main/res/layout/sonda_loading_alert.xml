@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?sondaAlertBackgroundLoading"
+    android:minHeight="@dimen/sonda_alert_loading_height"
+    android:paddingTop="@dimen/sonda_margin_sm"
+    android:paddingBottom="@dimen/sonda_margin_sm">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/alert_icon"
+        android:layout_width="@dimen/sonda_alert_icon_size"
+        android:layout_height="@dimen/sonda_alert_icon_size"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?sondaAlertIcon"
+        app:tint="?sondaAlertIconColor" />
+
+    <br.com.sondasd.typography.SondaTextView
+        android:id="@+id/alert_text"
+        style="@style/Sonda.Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/alert_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Alert" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:layout_marginTop="@dimen/sonda_margin_xxxs"
+        android:layout_marginEnd="@dimen/sonda_margin_xs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/alert_icon"
+        app:layout_constraintTop_toBottomOf="@id/alert_text">
+
+        <ProgressBar
+            android:id="@+id/progress_horizontal"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sonda_alert_progressbar_height"
+            android:background="@drawable/sonda_alert_background"
+            android:minHeight="@dimen/sonda_alert_progressbar_height"
+            android:scaleY="10"
+            tools:progress="10" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

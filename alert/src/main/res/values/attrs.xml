@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sondaAlertTheme" format="reference"/>
+
+    <attr name="sondaAlertIcon" format="reference"/>
+    <attr name="sondaAlertBackground" format="reference"/>
+    <attr name="sondaAlertTextColor" format="reference"/>
+    <attr name="sondaAlertIconColor" format="reference"/>
+
+    <attr name="sondaAlertIconError" format="reference"/>
+    <attr name="sondaAlertIconInfo" format="reference"/>
+    <attr name="sondaAlertIconSuccess" format="reference"/>
+    <attr name="sondaAlertIconWarning" format="reference"/>
+
+    <attr name="sondaAlertBackgroundError" format="reference"/>
+    <attr name="sondaAlertBackgroundInfo" format="reference"/>
+    <attr name="sondaAlertBackgroundSuccess" format="reference"/>
+    <attr name="sondaAlertBackgroundWarning" format="reference"/>
+    <attr name="sondaAlertBackgroundLoading" format="reference"/>
+
+    <attr name="sondaAlertIconClose" format="reference"/>
+    <attr name="sondaAlertIconCloseColor" format="reference"/>
+
+    <attr name="sondaAlertLoadingTheme" format="reference"/>
+    <attr name="sondaAlertLoadingColor" format="reference"/>
+    <attr name="sondaAlertLoadingBackgroundColor" format="reference"/>
+
+    <declare-styleable name="SondaLoadingAlertView">
+        <attr name="sondaAlertLoadingColor"/>
+        <attr name="sondaAlertLoadingBackgroundColor"/>
+    </declare-styleable>
+
+</resources>

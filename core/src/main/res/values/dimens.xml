@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sonda_border_radius_small">4dp</dimen>
+    <dimen name="sonda_border_radius_medium">8dp</dimen>
+    <dimen name="sonda_border_radius_large">16dp</dimen>
+
+    <dimen name="sonda_margin_xxxxs">2dp</dimen>
+    <dimen name="sonda_margin_xxxs">4dp</dimen>
+    <dimen name="sonda_margin_xxs">8dp</dimen>
+    <dimen name="sonda_margin_xs">16dp</dimen>
+    <dimen name="sonda_margin_sm">24dp</dimen>
+    <dimen name="sonda_margin_md">32dp</dimen>
+    <dimen name="sonda_margin_lg">40dp</dimen>
+    <dimen name="sonda_margin_xl">64dp</dimen>
+    <dimen name="sonda_margin_xxl">96dp</dimen>
+    <dimen name="sonda_margin_xxxl">128dp</dimen>
+    <dimen name="sonda_margin_xxxxl">256dp</dimen>
+
+    <dimen name="sonda_font_size_us">12sp</dimen>
+    <dimen name="sonda_font_size_xxxs">14sp</dimen>
+    <dimen name="sonda_font_size_xxs">16sp</dimen>
+    <dimen name="sonda_font_size_xs">20sp</dimen>
+    <dimen name="sonda_font_size_sm">24sp</dimen>
+    <dimen name="sonda_font_size_md">32sp</dimen>
+    <dimen name="sonda_font_size_lg">40sp</dimen>
+    <dimen name="sonda_font_size_xl">48sp</dimen>
+    <dimen name="sonda_font_size_xxl">56sp</dimen>
+    <dimen name="sonda_font_size_xxxl">64sp</dimen>
+
+    <dimen name="sonda_icon_small">16dp</dimen>
+    <dimen name="sonda_icon_default">24dp</dimen>
+
+
+</resources>

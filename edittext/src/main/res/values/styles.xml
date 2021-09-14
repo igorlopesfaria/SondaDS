@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sonda.TextInput" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="theme">?sondaInputTextTheme</item>
+        <item name="hintTextColor">?sondaInputHintTextColor</item>
+        <item name="boxStrokeColor">?sondaInputStrokeColor</item>
+        <item name="endIconMode">none</item>
+        <item name="errorEnabled">false</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="startIconTint">?sondaInputIconColor</item>
+        <item name="boxBackgroundColor">?sondaInputBackgroundColor</item>
+        <item name="android:textColor">?sondaInputTextColor</item>
+        <item name="android:textColorHint">?sondaInputHintTextColor</item>
+        <item name="boxCornerRadiusTopStart">@dimen/sonda_border_radius_small</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/sonda_border_radius_small</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/sonda_border_radius_small</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/sonda_border_radius_small</item>
+        <item name="android:fontFamily">@font/font_family_base_regular</item>
+        <item name="fontFamily">@font/font_family_base_regular</item>
+        <item name="expandedHintEnabled">false</item>
+    </style>
+
+    <style name="Sonda.TextInputTheme" >
+        <item name="colorControlActivated">@color/sonda_neutral_dark</item>
+        <item name="sondaInputTextTheme">@style/Sonda.TextInputTheme</item>
+        <item name="sondaInputIconColor">@color/sonda_neutral_dark3</item>
+        <item name="sondaInputHintTextColor">@color/sonda_color_secondary</item>
+        <item name="sondaInputTextColor">@color/sonda_input_text_color</item>
+        <item name="sondaInputStrokeColor">@color/sonda_input_text_stroke</item>
+        <item name="sondaInputColorSuccess">@color/sonda_input_text_stroke_success</item>
+        <item name="sondaInputColorError">@color/sonda_input_text_stroke_error</item>
+        <item name="sondaInputBackgroundColor">@android:color/transparent</item>
+
+        <item name="boxCornerRadiusTopStart">@dimen/sonda_border_radius_small</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/sonda_border_radius_small</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/sonda_border_radius_small</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/sonda_border_radius_small</item>
+    </style>
+
+    <style name="Sonda.TextInput.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/font_family_base_regular</item>
+        <item name="fontFamily">@font/font_family_base_regular</item>
+        <item name="errorTextAppearance">@style/Sonda.TextInput.EditText</item>
+    </style>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_alert_from_top"
+        android:layout_marginTop="@dimen/sonda_margin_xl"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/error_top_button"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_alert_from_bottom"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/error_bottom_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/warning_alert_from_top"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/warning_top_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/warning_alert_from_bottom"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/warning_bottom_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_alert_from_top"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/info_top_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_alert_from_bottom"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/info_bottom_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/success_alert_from_top"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/success_top_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/success_alert_from_bottom"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/success_bottom_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_alert_from_top"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/loading_top_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_alert_from_bottom"
+        android:layout_marginTop="@dimen/sonda_margin_xxs"
+        android:layout_marginStart="@dimen/sonda_margin_xs"
+        android:id="@+id/loading_bottom_button"/>
+
+
+</LinearLayout>

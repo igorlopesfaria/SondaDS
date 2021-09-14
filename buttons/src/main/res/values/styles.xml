@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sonda.Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/font_family_base_medium</item>
+        <item name="fontFamily">@font/font_family_base_medium</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="cornerRadius">@dimen/sonda_border_radius_large</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="iconGravity">textStart</item>
+        <item name="theme">?sondaButtonTheme</item>
+    </style>
+
+    <style name="Sonda.ButtonTheme">
+        <item name="sondaBlockedButtonBackgroundTint">@color/sonda_neutral_light2</item>
+        <item name="sondaBlockedButtonBackground">@drawable/sonda_blocked_button_background</item>
+        <item name="sondaBlockedButtonTextColor">@color/sonda_neutral_dark1</item>
+        <item name="sondaBlockedButtonIconColor">@color/sonda_neutral_dark1</item>
+
+        <item name="sondaPrimaryButtonBackgroundTint">@color/sonda_primary_button_selector_background</item>
+        <item name="sondaPrimaryButtonBackground">@drawable/sonda_primary_button_background</item>
+        <item name="sondaPrimaryButtonTextColor">@color/sonda_neutral_light</item>
+        <item name="sondaPrimaryButtonIconColor">@color/sonda_neutral_light</item>
+
+        <item name="sondaSecondaryButtonBackground">@drawable/sonda_secondary_button_background</item>
+        <item name="sondaSecondaryButtonBackgroundTint">@color/sonda_secondary_button_selector_background</item>
+        <item name="sondaSecondaryButtonTextColor">@color/sonda_neutral_light</item>
+        <item name="sondaSecondaryButtonIconColor">@color/sonda_neutral_light</item>
+    </style>
+
+    <style name="Sonda.Button.Primary" parent="Sonda.Button">
+
+        <item name="android:textSize">@dimen/sonda_font_size_xxxs</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">@dimen/sonda_margin_sm</item>
+        <item name="android:paddingEnd">@dimen/sonda_margin_sm</item>
+
+        <item name="iconSize">@dimen/sonda_icon_default</item>
+        <item name="iconTint">?sondaPrimaryButtonIconColor</item>
+
+        <item name="backgroundTint">@color/sonda_primary_button_selector_background</item>
+        <item name="sondaButtonBackground">?sondaPrimaryButtonBackground</item>
+        <item name="android:textColor">?sondaPrimaryButtonTextColor</item>
+        <item name="android:textColorPrimary">?sondaPrimaryButtonTextColor</item>
+
+    </style>
+
+    <style name="Sonda.Button.Blocked" parent="Sonda.Button">
+        <item name="android:textSize">@dimen/sonda_font_size_xxxs</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">@dimen/sonda_margin_sm</item>
+        <item name="android:paddingEnd">@dimen/sonda_margin_sm</item>
+
+        <item name="iconSize">@dimen/sonda_icon_default</item>
+        <item name="iconTint">?sondaBlockedButtonIconColor</item>
+
+        <item name="backgroundTint">?sondaBlockedButtonBackgroundTint</item>
+        <item name="sondaButtonBackground">?sondaBlockedButtonBackground</item>
+        <item name="android:textColor">?sondaBlockedButtonTextColor</item>
+        <item name="android:textColorPrimary">?sondaBlockedButtonTextColor</item>
+    </style>
+
+    <style name="Sonda.Button.Secondary" parent="Sonda.Button">
+        <item name="android:textSize">@dimen/sonda_font_size_xxxs</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">@dimen/sonda_margin_sm</item>
+        <item name="android:paddingEnd">@dimen/sonda_margin_sm</item>
+
+        <item name="iconSize">@dimen/sonda_icon_default</item>
+        <item name="iconTint">?sondaSecondaryButtonIconColor</item>
+
+        <item name="backgroundTint">?sondaSecondaryButtonBackgroundTint</item>
+        <item name="sondaButtonBackground">?sondaSecondaryButtonBackground</item>
+        <item name="android:textColor">?sondaSecondaryButtonTextColor</item>
+        <item name="android:textColorPrimary">?sondaSecondaryButtonTextColor</item>
+    </style>
+
+</resources>

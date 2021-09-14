@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sondaInfoViewTheme" format="reference"/>
+    <declare-styleable name="SondaInfoView">
+        <attr name="infoTitle" format="string" />
+        <attr name="infoMessage" format="string" />
+        <attr name="infoIcon" format="reference" />
+        <attr name="infoIconTint" format="color" />
+    </declare-styleable>
+</resources>

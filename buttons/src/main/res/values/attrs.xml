@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="sondaButtonTheme" format="reference"/>
+    <attr name="sondaButtonBackground" format="reference"/>
+
+    <attr name="isLoading" format="boolean"/>
+    <attr name="loadingDuration" format="integer"/>
+
+    <attr name="sondaBlockedButtonBackground" format="reference"/>
+    <attr name="sondaBlockedButtonBackgroundTint" format="reference"/>
+    <attr name="sondaBlockedButtonIconColor" format="reference"/>
+    <attr name="sondaBlockedButtonTextColor" format="reference"/>
+
+    <attr name="sondaPrimaryButtonBackgroundTint" format="reference"/>
+    <attr name="sondaPrimaryButtonBackground" format="reference"/>
+    <attr name="sondaPrimaryButtonIconColor" format="reference"/>
+    <attr name="sondaPrimaryButtonTextColor" format="reference"/>
+
+    <attr name="sondaSecondaryButtonTextColor" format="reference"/>
+    <attr name="sondaSecondaryButtonIconColor" format="reference"/>
+    <attr name="sondaSecondaryButtonBackground" format="reference"/>
+    <attr name="sondaSecondaryButtonBackgroundTint" format="reference"/>
+
+    <attr name="sondaIconButtonBackgroundTint" format="reference"/>
+    <attr name="sondaIconButtonIconTint" format="reference"/>
+
+    <declare-styleable name="SondaButton">
+        <attr name="sondaButtonBackground" />
+    </declare-styleable>
+
+    <declare-styleable name="SondaLoadingButton">
+        <attr name="isLoading" />
+    </declare-styleable>
+
+
+</resources>

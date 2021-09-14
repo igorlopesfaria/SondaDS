@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+        <item name="sondaAlertTheme">@style/Sonda.AlertTheme</item>
+        <item name="sondaAlertLoadingTheme">@style/Sonda.AlertThemeLoading</item>
+        <item name="sondaTypographyTheme">@style/Sonda.TypographyTheme</item>
+        <item name="sondaButtonTheme">@style/Sonda.ButtonTheme</item>
+        <item name="sondaCellItemTheme">@style/Sonda.CellItemTheme</item>
+        <item name="sondaInputTextTheme">@style/Sonda.TextInputTheme</item>
+        <item name="sondaInfoViewTheme">@style/Sonda.InfoViewTheme</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+
+        <item name="sondaAlertTheme">@style/Sonda.AlertTheme</item>
+        <item name="sondaAlertLoadingTheme">@style/Sonda.AlertThemeLoading</item>
+        <item name="sondaTypographyTheme">@style/Sonda.TypographyTheme.Inverse</item>
+        <item name="sondaButtonTheme">@style/Sonda.ButtonTheme</item>
+        <item name="sondaCellItemTheme">@style/Sonda.CellItemTheme</item>
+        <item name="sondaInputTextTheme">@style/Sonda.TextInputTheme</item>
+    </style>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <br.com.sonda.edittext.SondaTextInputLayout
+        style="@style/Sonda.TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sonda_margin_xxs"
+        android:hint="hint">
+
+        <br.com.sonda.edittext.SondaEditText
+            style="@style/Sonda.TextInput.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </br.com.sonda.edittext.SondaTextInputLayout>
+
+    <br.com.sonda.edittext.SondaTextInputLayout
+        style="@style/Sonda.TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sonda_margin_xxs"
+        android:hint="hint">
+
+        <br.com.sonda.edittext.SondaEditText
+            style="@style/Sonda.TextInput.EditText"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:text="Text disabled"
+            android:layout_height="wrap_content"/>
+
+    </br.com.sonda.edittext.SondaTextInputLayout>
+
+    <br.com.sonda.edittext.SondaTextInputLayout
+        android:id="@+id/sonda_input_layout"
+        style="@style/Sonda.TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sonda_margin_xxs"
+        android:hint="hint">
+
+        <br.com.sonda.edittext.SondaEditText
+            android:id="@+id/sonda_edit_text"
+            style="@style/Sonda.TextInput.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </br.com.sonda.edittext.SondaTextInputLayout>
+
+    <br.com.sonda.edittext.SondaTextInputLayout
+        style="@style/Sonda.TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sonda_margin_xxs"
+        app:startIconDrawable="@drawable/ic_like"
+        app:startIconTint="@color/sonda_color_secondary"
+        android:hint="hint">
+
+        <br.com.sonda.edittext.SondaEditText
+            style="@style/Sonda.TextInput.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </br.com.sonda.edittext.SondaTextInputLayout>
+
+    <br.com.sonda.edittext.SondaTextInputLayout
+        style="@style/Sonda.TextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sonda_margin_xxs"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/sonda_color_secondary"
+        android:hint="Senha">
+
+        <br.com.sonda.edittext.SondaEditText
+            style="@style/Sonda.TextInput.EditText"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </br.com.sonda.edittext.SondaTextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error"
+        android:id="@+id/error"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/reset"/>
+
+</LinearLayout>

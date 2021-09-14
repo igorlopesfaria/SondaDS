@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sonda.Cell">
+        <item name="iconTint">?sondaCellIconColor</item>
+        <item name="android:theme">?sondaCellItemTheme</item>
+    </style>
+
+    <style name="Sonda.CellItemTheme">
+        <item name="iconTint">@color/sonda_color_primary</item>
+        <item name="sondaCellTitleColor">@color/sonda_cell_text_color</item>
+        <item name="sondaCellSubtitleColor">@color/sonda_cell_description_text_color</item>
+        <item name="sondaCellLineColor">@color/sonda_color_primary</item>
+        <item name="sondaCellBackground">@drawable/sonda_cell_background</item>
+    </style>
+
+</resources>

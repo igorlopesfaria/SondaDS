@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sonda.TypographyTheme">
+        <item name="sondaHeadingTextColor">@color/sonda_neutral_dark</item>
+        <item name="sondaTitleTextColor">@color/sonda_neutral_dark3</item>
+        <item name="sondaSubtitleTextColor">@color/sonda_neutral_dark2</item>
+        <item name="sondaParagraphTextColor">@color/sonda_neutral_dark2</item>
+        <item name="sondaDescriptionTextColor">@color/sonda_neutral_dark1</item>
+        <item name="sondaCaptionTextColor">@color/sonda_neutral_dark2</item>
+        <item name="sondaLinkTextColor">@color/sonda_neutral_dark</item>
+    </style>
+
+    <style name="Sonda.TypographyTheme.Inverse">
+        <item name="sondaHeadingTextColor">@color/sonda_neutral_light</item>
+        <item name="sondaTitleTextColor">@color/sonda_neutral_light3</item>
+        <item name="sondaSubtitleTextColor">@color/sonda_neutral_light2</item>
+        <item name="sondaParagraphTextColor">@color/sonda_neutral_light2</item>
+        <item name="sondaDescriptionTextColor">@color/sonda_neutral_light2</item>
+        <item name="sondaCaptionTextColor">@color/sonda_neutral_light2</item>
+        <item name="sondaLinkTextColor">@color/sonda_neutral_light</item>
+    </style>
+
+    <style name="Sonda.Head" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/font_family_base_medium</item>
+        <item name="android:fontFamily">@font/font_family_base_medium</item>
+        <item name="android:textSize">@dimen/sonda_font_size_xs</item>
+        <item name="android:textColor">?sondaTitleTextColor</item>
+        <item name="theme">?sondaTypographyTheme</item>
+    </style>
+
+    <style name="Sonda.Head.Regular" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/font_family_base_regular</item>
+        <item name="android:fontFamily">@font/font_family_base_regular</item>
+        <item name="android:textSize">@dimen/sonda_font_size_xs</item>
+        <item name="android:textColor">?sondaTitleTextColor</item>
+        <item name="theme">?sondaTypographyTheme</item>
+    </style>
+
+
+    <style name="Sonda.Title" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/font_family_base_medium</item>
+        <item name="android:fontFamily">@font/font_family_base_medium</item>
+        <item name="android:textSize">@dimen/sonda_font_size_xxs</item>
+        <item name="android:textColor">?sondaTitleTextColor</item>
+        <item name="theme">?sondaTypographyTheme</item>
+    </style>
+    <style name="Sonda.Title.Regular" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/font_family_base_regular</item>
+        <item name="android:fontFamily">@font/font_family_base_regular</item>
+        <item name="android:textSize">@dimen/sonda_font_size_xxs</item>
+        <item name="android:textColor">?sondaTitleTextColor</item>
+        <item name="theme">?sondaTypographyTheme</item>
+    </style>
+
+    <style name="Sonda.Description" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/font_family_base_regular</item>
+        <item name="android:fontFamily">@font/font_family_base_regular</item>
+        <item name="android:textSize">@dimen/sonda_font_size_xxxs</item>
+        <item name="android:textColor">?sondaDescriptionTextColor</item>
+        <item name="theme">?sondaTypographyTheme</item>
+    </style>
+
+    <style name="sonda.Caption" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/font_family_base_regular</item>
+        <item name="android:fontFamily">@font/font_family_base_regular</item>
+        <item name="android:textSize">@dimen/sonda_font_size_us</item>
+        <item name="android:textColor">?sondaCaptionTextColor</item>
+        <item name="theme">?sondaTypographyTheme</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="sondaTextInputEditTextTheme"/>
+
+    <attr format="reference" name="sondaInputColorSuccess"/>
+    <attr format="reference" name="sondaInputColorError"/>
+    <attr format="reference" name="sondaInputStrokeColor"/>
+    <attr format="reference" name="sondaInputHintTextColor"/>
+    <attr format="reference" name="sondaInputIconColor"/>
+    <attr format="reference" name="sondaInputTextColor"/>
+
+    <attr format="reference" name="sondaInputTextTheme"/>
+    <attr format="reference" name="sondaInputBackgroundColor"/>
+    <declare-styleable name="SondaInputLayout">
+        <attr name="sondaInputColorSuccess"/>
+        <attr name="sondaInputColorError"/>
+        <attr name="sondaInputStrokeColor"/>
+        <attr name="sondaInputTextColor"/>
+        <attr name="sondaInputHintTextColor"/>
+        <attr name="sondaInputIconColor"/>
+    </declare-styleable>
+
+</resources>
