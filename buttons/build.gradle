@@ -22,6 +22,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    buildFeatures {
+        viewBinding true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.0.1'
+    }
+    compileOptions {
+        sourceCompatibility sourceCompatibility
+        targetCompatibility sourceCompatibility
+    }
 }
 
 dependencies {

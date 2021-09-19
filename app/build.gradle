@@ -5,7 +5,6 @@ plugins {
 
 android {
     compileSdk 31
-
     defaultConfig {
         applicationId "br.com.sondasd"
         minSdk 21
@@ -25,8 +24,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileSdkVersion 30
-    buildToolsVersion '31.0.0'
+    compileOptions {
+        sourceCompatibility sourceCompatibility
+        targetCompatibility sourceCompatibility
+    }
 }
 
 dependencies {

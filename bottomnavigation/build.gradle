@@ -5,7 +5,6 @@ plugins {
 
 android {
     compileSdk 31
-
     defaultConfig {
         minSdk 21
         targetSdk 31
@@ -21,6 +20,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility sourceCompatibility
+        targetCompatibility sourceCompatibility
     }
 }
 

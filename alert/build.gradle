@@ -28,6 +28,10 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion '1.0.1'
     }
+    compileOptions {
+        sourceCompatibility sourceCompatibility
+        targetCompatibility sourceCompatibility
+    }
 }
 
 dependencies {
