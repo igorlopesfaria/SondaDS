@@ -3,15 +3,6 @@ plugins {
     id 'kotlin-android'
     id 'maven-publish'
 }
-project.afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-            }
-        }
-    }
-}
 
 android {
     compileSdkVersion 31
@@ -20,7 +11,7 @@ android {
         minSdk 21
         targetSdkVersion 31
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.11"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -33,7 +24,19 @@ android {
         }
     }
 }
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
 
+                groupId = 'br.com.sondasd'
+                artifactId = 'tagfilter'
+                version = '0.0.11'
+            }
+        }
+    }
+}
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.6.0'
