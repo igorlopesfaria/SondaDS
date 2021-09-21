@@ -2,5 +2,13 @@ jdk:
   - openjdk11
 install:
   - ./gradlew build :alert:publishToMavenLocal
+  - ./gradlew build :bottomnavigation:publishToMavenLocal
   - ./gradlew build :buttons:publishToMavenLocal
-
+  - ./gradlew build :cell:publishToMavenLocal
+  - ./gradlew build :core:publishToMavenLocal
+  - ./gradlew build :edittext:publishToMavenLocal
+  - ./gradlew build :infoview:publishToMavenLocal
+  - ./gradlew build :tagfilter:publishToMavenLocal
+  - ./gradlew build :toogles:publishToMavenLocal
+  - ./gradlew build :toolbar:publishToMavenLocal
+  - ./gradlew build :typography:publishToMavenLocal
