@@ -7,6 +7,7 @@
 
     <style name="Sonda.CellItemTheme">
         <item name="iconTint">@color/sonda_color_primary</item>
+        <item name="iconIndicatorTint">@color/sonda_color_secondary_dark</item>
         <item name="sondaCellTitleColor">@color/sonda_cell_text_color</item>
         <item name="sondaCellSubtitleColor">@color/sonda_cell_description_text_color</item>
         <item name="sondaCellLineColor">@color/sonda_color_primary</item>

@@ -3,19 +3,6 @@ plugins {
     id 'kotlin-android'
     id 'maven-publish'
 }
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                groupId = 'br.com.sondasd'
-                artifactId = 'toggles'
-                version = '0.0.11'
-            }
-        }
-    }
-}
 android {
     compileSdkVersion 31
 
@@ -33,6 +20,19 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'br.com.sondasd'
+                artifactId = 'toggles'
+                version = '0.0.11'
+            }
         }
     }
 }

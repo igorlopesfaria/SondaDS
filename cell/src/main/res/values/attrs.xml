@@ -2,11 +2,14 @@
 <resources>
     <attr name="text" format="string"/>
     <attr name="iconSrc" format="reference"/>
+    <attr name="iconIndicatorSrc" format="reference"/>
+    <attr name="iconIndicatorTint" format="reference"/>
     <attr name="title" format="string"/>
     <attr name="subtitle" format="string"/>
 
     <attr name="sondaCellItemTheme" format="reference"/>
     <attr name="sondaCellIconColor" format="reference"/>
+    <attr name="sondaCellIconIndicatorColor" format="reference"/>
     <attr name="sondaCellTitleColor" format="reference"/>
     <attr name="sondaCellSubtitleColor" format="reference"/>
     <attr name="sondaCellLineColor" format="reference"/>
@@ -15,6 +18,8 @@
     <declare-styleable name="SondaCellItemView">
         <attr name="iconTint"/>
         <attr name="iconSrc"/>
+        <attr name="iconIndicatorTint"/>
+        <attr name="iconIndicatorSrc"/>
         <attr name="title"/>
         <attr name="subtitle"/>
         <attr name="sondaCellLineColor"/>

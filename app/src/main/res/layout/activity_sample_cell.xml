@@ -16,6 +16,13 @@
         android:layout_height="wrap_content"
         app:title="@string/title_cell_item"
         />
+    <br.com.sondasd.cell.SondaCellItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/title_cell_item"
+        app:iconIndicatorSrc="@android:drawable/arrow_up_float"
+        app:iconTint="@color/sonda_color_secondary_dark"
+        />
 
     <br.com.sondasd.cell.SondaCellItemView
         android:layout_width="match_parent"

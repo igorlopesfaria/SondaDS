@@ -53,10 +53,10 @@ class CellItemAdapter: RecyclerView.Adapter<CellViewHolder>() {
         holder.bind(itemList[position], position)
     }
 }
-class CellItem(val id: Int? = null, val title: String? = "", val subtitle: String? = "", @DrawableRes val icon: Int = 0)
+class CellItem(val id: Int? = null, val title: String? = "", val subtitle: String? = "", @DrawableRes val icon: Int = 0, val selected:Boolean? = false)
 
 val cellItems = arrayListOf(
-    CellItem(1, title = "Single Text 1"),
+    CellItem(1, title = "Single Text 1", selected = true),
     CellItem(2, "Single Text 2"),
     CellItem(3, "Single Text with icon 3", icon = R.drawable.ic_like),
     CellItem(4, "Single Text with icon 4", icon = R.drawable.ic_like),
@@ -85,6 +85,8 @@ class CellViewHolder(private val cellItemView: SondaCellItemView) : RecyclerView
                 cellItem.title?.let { title = it }
                 cellItem.subtitle?.let { subtitle = it }
                 cellItem.icon.let { iconResource = it }
+                if (cellItem.selected != null && cellItem.selected)
+                    iconIndicatorResource = R.drawable.ic_done
             } ?: run {
                 currentState = StateView.State.SKELETON
                 cellItem.title?.let { title = it }

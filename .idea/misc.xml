@@ -36,7 +36,7 @@
         <entry key="buttons/src/main/res/drawable/sonda_transparent_button_background.xml" value="0.228125" />
         <entry key="cell/src/main/res/drawable/sonda_cell_background.xml" value="0.19322916666666667" />
         <entry key="cell/src/main/res/layout/sonda_cell_item_skeleton.xml" value="0.46971569839307786" />
-        <entry key="cell/src/main/res/layout/sonda_cell_item_view.xml" value="0.45949214026602175" />
+        <entry key="cell/src/main/res/layout/sonda_cell_item_view.xml" value="0.33" />
         <entry key="core/src/main/res/drawable/ic_like.xml" value="0.20462962962962963" />
         <entry key="infoview/src/main/res/drawable/sonda_infoview_background.xml" value="0.20462962962962963" />
         <entry key="infoview/src/main/res/layout/sonda_infoview_item.xml" value="0.33" />

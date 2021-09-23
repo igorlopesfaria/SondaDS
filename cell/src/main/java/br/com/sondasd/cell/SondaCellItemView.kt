@@ -31,6 +31,7 @@ class SondaCellItemView @JvmOverloads constructor(
     private lateinit var subtitleTextView: SondaTextView
     private lateinit var lineView: View
     private lateinit var iconView: AppCompatImageView
+    private lateinit var iconIndicatorView: AppCompatImageView
     private lateinit var containerView: ConstraintLayout
 
     private lateinit var titleSkeletonTextView: View
@@ -52,9 +53,11 @@ class SondaCellItemView @JvmOverloads constructor(
                 getString(R.styleable.SondaCellItemView_title)?.let { title = it }
                 getString(R.styleable.SondaCellItemView_subtitle)?.let { subtitle = it }
                 getResourceId(R.styleable.SondaCellItemView_iconSrc, 0).takeUnless { it == 0 }?.let { iconResource = it }
+                getResourceId(R.styleable.SondaCellItemView_iconIndicatorSrc, 0).takeUnless { it == 0 }?.let { iconIndicatorResource = it }
                 getResourceId(R.styleable.SondaCellItemView_sondaCellBackground, 0).takeUnless { it == 0 }?.let { containerView.setBackgroundResource(it) }
                 getColor(R.styleable.SondaCellItemView_sondaCellLineColor, 0).takeUnless { it == 0 }?.let { lineTint = it }
                 getColor(R.styleable.SondaCellItemView_iconTint, 0).takeUnless { it == 0 }?.let { iconTint = it }
+                getColor(R.styleable.SondaCellItemView_iconIndicatorTint, 0).takeUnless { it == 0 }?.let { iconIndicatorTint = it }
             }
     }
 
@@ -72,6 +75,7 @@ class SondaCellItemView @JvmOverloads constructor(
                 subtitleTextView = currentView.findViewById(R.id.sonda_cell_item_subtitle)
                 lineView = currentView.findViewById(R.id.sonda_cell_line)
                 iconView = currentView.findViewById(R.id.sonda_cell_icon)
+                iconIndicatorView = currentView.findViewById(R.id.sonda_cell_icon_indicator)
                 containerView = currentView.findViewById(R.id.sonda_cell_container)
             }
         }
@@ -125,6 +129,12 @@ class SondaCellItemView @JvmOverloads constructor(
             field = value
             iconView.setColorFilter(field)
         }
+    @ColorInt
+    var iconIndicatorTint: Int = ContextCompat.getColor(context, R.color.sonda_color_secondary_dark)
+        set(value) {
+            field = value
+            iconIndicatorView.setColorFilter(field)
+        }
 
     @DrawableRes
     var iconResource: Int = 0
@@ -140,6 +150,16 @@ class SondaCellItemView @JvmOverloads constructor(
                     iconView.setImageResource(value)
                     if (value > 0) iconView.show() else iconView.hide()
                 }
+            }
+        }
+    @DrawableRes
+    var iconIndicatorResource: Int = 0
+        set(value) {
+            field = value
+            if (currentState == StateView.State.NORMAL) {
+                iconIndicatorView.setColorFilter(iconIndicatorTint)
+                iconIndicatorView.setImageResource(value)
+                if (value > 0) iconIndicatorView.show() else iconIndicatorView.hide()
             }
         }
 

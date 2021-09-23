@@ -45,11 +45,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/sonda_margin_xs"
+            android:layout_marginEnd="@dimen/sonda_margin_xs"
             android:layout_marginTop="@dimen/sonda_margin_xs"
             android:layout_marginBottom="@dimen/sonda_margin_xs"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/sonda_cell_icon_indicator"
             app:layout_constraintStart_toEndOf="@+id/sonda_cell_icon"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -70,6 +71,18 @@
                 android:visibility="gone"
                 tools:text="Subtitle"
                 tools:visibility="visible" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sonda_cell_icon_indicator"
+            android:layout_width="@dimen/sonda_icon_small"
+            android:layout_height="@dimen/sonda_icon_small"
+            android:layout_marginEnd="@dimen/sonda_margin_xs"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
